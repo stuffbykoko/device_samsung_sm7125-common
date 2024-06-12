@@ -224,7 +224,7 @@ ro.vendor.vibrator_hal.tick_duration=40
 ro.vendor.vibrator_hal.texture_tick_duration=40
 
 # Watchdog
-ro.hw_timeout_multiplier=3
+ro.hw_timeout_multiplier=6
 
 # Wifi
 wifi.aware.interface=wifi-aware0
