@@ -158,6 +158,9 @@ PRODUCT_PACKAGES += \
     vendor.display.config@2.0.vendor \
     AdvancedDisplay
 
+# Include
+$(call soong_config_set,samsungVars,target_specific_header_path,$(COMMON_PATH)/include)
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
