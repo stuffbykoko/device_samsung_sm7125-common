@@ -53,7 +53,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a55
 TARGET_KERNEL_SOURCE        := kernel/samsung/sm7125
 
 # Kernel flags
-BOARD_KERNEL_CMDLINE += console=null androidboot.hardware=qcom lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 androidboot.usbcontroller=a600000.dwc3 printk.devkmsg=on firmware_class.path=/vendor/firmware_mnt/image cgroup_disable=pressure
+BOARD_KERNEL_CMDLINE += console=null androidboot.hardware=qcom lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 androidboot.usbcontroller=a600000.dwc3 printk.devkmsg=on firmware_class.path=/vendor/firmware_mnt/image cgroup_disable=pressure kasan=off
 #BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_BOOTIMG_HEADER_VERSION := 2
 
