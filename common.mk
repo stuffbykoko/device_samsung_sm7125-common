@@ -145,8 +145,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service \
     libtinyxml \
     libtinyxml2 \
-    hwcomposer.atoll \
-    gralloc.atoll \
+    hwcomposer.qcom \
     libqdMetaData \
     libdisplayconfig.qti \
     vendor.qti.hardware.display.mapper@1.1.vendor \
