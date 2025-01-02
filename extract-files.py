@@ -19,6 +19,12 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
+    'device/samsung/sm7125-common',
+    'hardware/qcom-caf/sm8150',
+    'hardware/qcom-caf/wlan',
+    'hardware/samsung',
+    'vendor/qcom/opensource/dataservices',
+    'vendor/qcom/opensource/display',
 ]
 
 
@@ -29,11 +35,19 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
-        'com.qualcomm.qti.ant@1.0_vendor',
-        'libmmosal',
+        'libexthwplugin',
+        'libsndmonitor',
+        'libbatterylistener',
+        'liba2dpoffload',
+        'libcomprcapture',
+        'libhdmiedid',
+        'libhdmipassthru',
+        'libhfplibcirrusspkrprot',
+        'libspkrprot',
+        'vendor.qti.hardware.fm@1.0',
+        'libsecril-client',
     ): lib_fixup_vendor_suffix,
     (
-        'libOmxCore',
         'libwpa_client',
     ): lib_fixup_remove,
 }
@@ -48,6 +62,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
     ('vendor/lib/libwvhidl.so', 'vendor/lib/mediadrm/libwvdrmengine.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
+    ('vendor/lib/unihal_main@2.15.so', 'vendor/lib64/unihal_main@2.15.so'): blob_fixup()
+        .add_needed('libui_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
@@ -56,7 +72,6 @@ module = ExtractUtilsModule(
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
-    check_elf=False,
 )
 
 if __name__ == '__main__':
