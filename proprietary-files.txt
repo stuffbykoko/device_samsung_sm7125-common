@@ -601,8 +601,14 @@ vendor/lib64/libkeymaster_helper.so
 vendor/lib64/libskeymaster4device.so|e4dcee6306be79bb3ca271466afeabd1b0b966d5
 
 # Machine learning
+vendor/lib/libperfconfig.so
+vendor/lib/libperfgluelayer.so
+vendor/lib/libqti-util.so
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libmeters.so
+vendor/lib64/libperfconfig.so
+vendor/lib64/libperfgluelayer.so
+vendor/lib64/libqti-util.so
 vendor/lib64/libreffeature.so
 
 # Neuralnetworks
