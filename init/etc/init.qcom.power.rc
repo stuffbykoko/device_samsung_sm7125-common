@@ -148,6 +148,10 @@ on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpu7/sched_load_boost -6
     write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load 85
 
+    # Setup dex2oat thread count and cpuset
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,7
+    setprop dalvik.vm.dex2oat-threads 6
+
     # Enable conservative pl
     write /proc/sys/kernel/sched_conservative_pl 1
 
