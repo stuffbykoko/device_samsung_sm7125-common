@@ -1,0 +1,11 @@
+cc_library_shared {
+    name: "hwcomposer.sm7125",
+    vendor: true,
+    relative_install_path: "hw",
+    shared_libs: [
+        "hwcomposer.qcom",
+    ],
+    srcs: [
+        "display_builtin.cpp",
+    ],
+}
