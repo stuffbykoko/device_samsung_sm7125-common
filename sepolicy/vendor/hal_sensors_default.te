@@ -28,6 +28,10 @@ allow hal_sensors_default sysfs_lcd_writable:file r_file_perms;
 allow hal_sensors_default sysfs_input:dir r_dir_perms;
 allow hal_sensors_default sysfs_input:file { read write open };
 
+allow hal_sensors_default sysfs_type:dir { ioctl read getattr lock open watch watch_reads search };
+allow hal_sensors_default sysfs_type:file { ioctl read getattr lock map open watch watch_reads };
+allow hal_sensors_default sysfs_type:lnk_file { ioctl read getattr lock map open watch watch_reads };
+
 # /sys/devices/virtual/sec/sec_key/
 allow hal_sensors_default sysfs_sec_key:dir r_dir_perms;
 allow hal_sensors_default sysfs_sec_key:file r_file_perms;
