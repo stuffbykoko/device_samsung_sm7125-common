@@ -1,4 +1,4 @@
-# All blobs are from A525FXXS9FXJ1 (U), unless pinned
+# All blobs are from A525FXXSAFXJ2 (U), unless pinned
 
 # lowi-server depends on libwpa_client, which is a GNU makefile target
 
