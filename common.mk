@@ -102,6 +102,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor
 
 # Camera
+$(call soong_config_set,samsungCameraVars,needs_sec_reserved_field,true)
+
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service_32.samsung \
     libgrallocusage.vendor \
@@ -376,6 +378,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
+# FOD
+$(call soong_config_set,samsung_udfps,udfps_zorder,0x20000000u)
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti \
@@ -408,6 +413,8 @@ PRODUCT_PACKAGES += \
     FlashControl
 
 # Vibrator
+$(call soong_config_set,samsungVibratorVars,duration_amplitude,true)
+
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung
 

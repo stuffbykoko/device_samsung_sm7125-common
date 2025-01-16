@@ -123,15 +123,10 @@ BOARD_SUPPORTS_SOUND_TRIGGER := true
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth/include
 
-# Camera
-$(call soong_config_set,samsungCameraVars,needs_sec_reserved_field,true)
-
 # Keymaster
 TARGET_KEYMASTER_VARIANT := samsung
 
 # FOD
-$(call soong_config_set,samsung_udfps,udfps_zorder,0x20000000u)
-
 TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/samsung:libudfps_extension.samsung
 TARGET_USES_FOD_ZPOS := true
 TARGET_SEC_FP_REQUEST_FORCE_CALIBRATE := true
@@ -193,9 +188,6 @@ include hardware/samsung-ext/interfaces/sepolicy/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 PRODUCT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
-
-# Vibrator
-$(call soong_config_set,samsungVibratorVars,duration_amplitude,true)
 
 # Wifi
 BOARD_WLAN_DEVICE := qcwcn
