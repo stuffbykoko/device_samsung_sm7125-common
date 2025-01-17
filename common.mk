@@ -18,6 +18,7 @@ COMMON_PATH := device/samsung/sm7125-common
 
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
+$(call soong_config_set,rfs,mpss_firmware_symlink_target,firmware_modem)
 
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
