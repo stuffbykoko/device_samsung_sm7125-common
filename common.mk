@@ -150,7 +150,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.memtrack-service \
-    libtinyxml \
     libtinyxml2 \
     hwcomposer.sm7125 \
     libqdMetaData \
