@@ -35,6 +35,7 @@ PRODUCT_PACKAGES += \
     fstab.default.ramdisk \
     fstab.ramplus \
     init.qcom.rc \
+    init.recovery.qcom.rc \
     init.samsung.bsp.rc \
     init.samsung.display.rc \
     init.samsung.rc \
@@ -349,10 +350,6 @@ PRODUCT_PACKAGES += \
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl
-
-# Recovery
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/recovery/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc
 
 # RIL
 PRODUCT_PACKAGES += \
