@@ -41,7 +41,6 @@ aaudio.mmap_exclusive_policy=2
 aaudio.hw_burst_min_usec=2000
 vendor.audio.enable.mirrorlink=false
 persist.vendor.audio.voicecall.speaker.stereo=true
-ro.audio.monitorRotation=true
 vendor.audio.feature.spkr_prot.enable=true
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.compr_voip.enable=true
@@ -148,6 +147,7 @@ vendor.display.disable_dynamic_fps=1
 vendor.display.disable_hw_recovery_dump=1
 vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
 debug.sf.enable_egl_image_tracker=0
+debug.sf.disable_gl_backpressure=1
 debug.sf.layer_caching_active_layer_timeout_ms=1000
 debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_client_composition_cache=1
@@ -171,9 +171,6 @@ ro.opengles.version=196610
 ro.hardware.hwcomposer=sm7125
 
 # HWUI
-debug.hwui.renderer=skiagl
-debug.renderengine.backend=skiaglthreaded
-renderthread.skia.reduceopstasksplitting=true
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
 
@@ -193,9 +190,6 @@ ro.security.keystore.keytype=sakv2,gak
 
 # OEM Unlock
 ro.oem_unlock_supported=1
-
-# Perf
-vendor.perf.framepacing.enable=1
 
 # Power HAL
 vendor.powerhal.disp.idle_support=false
@@ -231,7 +225,3 @@ wifi.aware.interface=wifi-aware0
 
 # Zygote
 zygote.critical_window.minute=10
-persist.device_config.runtime_native.usap_pool_enabled=true
-
-# LMK 
-ro.lmk.log_stats=false
