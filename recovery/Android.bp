@@ -23,6 +23,6 @@ cc_library_static {
         "system/libbase/include",
         "bootable/recovery",
         "bootable/deprecated-ota/edify/include",
-        "bootable/recovery/otautil/include"
+        "bootable/recovery/otautil/include",
     ],
 }

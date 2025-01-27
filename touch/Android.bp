@@ -23,7 +23,7 @@ cc_binary {
     proprietary: true,
     srcs: [
         "GloveMode.cpp",
-        "service.cpp"
+        "service.cpp",
     ],
     shared_libs: [
         "libbase",

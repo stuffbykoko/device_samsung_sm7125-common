@@ -20,12 +20,11 @@ cc_library_headers {
 
 cc_defaults {
     name: "android.hardware.audio-impl_sm7125",
+    defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     proprietary: true,
     vendor: true,
     srcs: [":android.hardware.audio-impl_sm7125_srcs"],
-
-    defaults: ["hidl_defaults"],
 
     static_libs: [
         "libaudiofoundation",
