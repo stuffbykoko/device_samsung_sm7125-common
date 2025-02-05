@@ -368,6 +368,8 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set,samsung_udfps,udfps_zorder,0x20000000u)
 
 # Thermal
+$(call soong_config_set,qti_thermal,netlink,false)
+
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti \
     android.frameworks.cameraservice.service@2.1.vendor \
