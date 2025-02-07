@@ -191,6 +191,9 @@ ro.security.keystore.keytype=sakv2,gak
 # OEM Unlock
 ro.oem_unlock_supported=1
 
+# Media
+debug.stagefright.c2inputsurface=-1
+
 # Power HAL
 vendor.powerhal.disp.idle_support=false
 
