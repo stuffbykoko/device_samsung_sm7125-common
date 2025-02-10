@@ -17,6 +17,9 @@ persist.sys.fuse.passthrough.enable=true
 # Display
 persist.sys.brightness.low.gamma=true
 
+# Graphics
+debug.graphics.game_default_frame_rate.disabled=true
+
 # Disable Skia tracing by default
 debug.hwui.skia_tracing_enabled=false
 debug.hwui.skia_use_perfetto_track_events=false
