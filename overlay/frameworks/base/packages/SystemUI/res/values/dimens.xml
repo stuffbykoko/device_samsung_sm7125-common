@@ -19,7 +19,10 @@
 <resources>
 
     <!-- Bottom margin size when fingerprint in display is active -->
-    <dimen name="keyguard_indication_margin_bottom">20dp</dimen>
+    <dimen name="keyguard_indication_margin_bottom">16dp</dimen>
+
+    <!-- Height of the status bar header bar when on Keyguard (match status_bar_height) -->
+    <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height</dimen>
 
     <!--  Location on the screen of the center of the physical power button. This is a reasonable
     default that should be overridden by device-specific overlays.  -->
