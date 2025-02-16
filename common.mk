@@ -145,8 +145,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
-    vendor.display.config@2.0.vendor \
-    AdvancedDisplay
+    vendor.display.config@2.0.vendor
 
 # Include
 $(call soong_config_set,samsungVars,target_specific_header_path,$(COMMON_PATH)/include)
