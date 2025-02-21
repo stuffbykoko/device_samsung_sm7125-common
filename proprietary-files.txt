@@ -1,4 +1,4 @@
-# All blobs are from A525FXXUAFXL2 (U), unless pinned
+# All blobs are from A525FXXSAFYB1 (U), unless pinned
 #
 # Media (Codec2) - from mojito - V14.0.9.0.SKGMIXM (MOJITOGlobal)
 #
