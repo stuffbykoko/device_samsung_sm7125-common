@@ -97,7 +97,7 @@ camera.disable_zsl_mode=1
 ro.camera.notify_nfc=1
 
 # Chipset
-ro.soc.manufacturer=Qualcomm
+ro.soc.manufacturer=QTI
 ro.soc.model=SM7125
 
 # Crypto
