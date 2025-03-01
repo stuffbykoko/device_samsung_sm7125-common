@@ -97,7 +97,6 @@ camera.disable_zsl_mode=1
 ro.camera.notify_nfc=1
 
 # Chipset
-ro.soc.manufacturer=QTI
 ro.soc.model=SM7125
 
 # Crypto
@@ -109,8 +108,6 @@ ro.apk_verity.mode=2
 
 # Dalvik VM
 dalvik.vm.lockprof.threshold=500
-dalvik.vm.dex2oat64.enabled=true
-dalvik.vm.systemuicompilerfilter=speed
 
 # Display
 debug.sf.hw=0
@@ -155,7 +152,6 @@ debug.sf.enable_transaction_tracing=false
 debug.sf.treat_170m_as_sRGB=1
 ro.surface_flinger.protected_contents=true
 ro.surface_flinger.has_wide_color_display=true
-ro.surface_flinger.enable_frame_rate_override=false
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696

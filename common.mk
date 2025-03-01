@@ -5,10 +5,6 @@
 
 COMMON_PATH := device/samsung/sm7125-common
 
-# Add common definitions for Qualcomm
-$(call inherit-product, hardware/qcom-caf/common/common.mk)
-$(call soong_config_set,rfs,mpss_firmware_symlink_target,firmware_modem)
-
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
 # Partitions
@@ -18,6 +14,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # No A/B
 AB_OTA_UPDATER := false
+
+# Platform
+MSMSTEPPE := atoll
+TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
 
 # Init files and fstab
 PRODUCT_PACKAGES += \
@@ -175,10 +175,6 @@ PRODUCT_PACKAGES += \
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
-
-# Configstore
-PRODUCT_PACKAGES += \
-    disable_configstore \
 
 # FM
 PRODUCT_PACKAGES += \
@@ -373,10 +369,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.sm7125
 
-# Vendor service manager
-PRODUCT_PACKAGES += \
-    vndservicemanager
-
 # Update
 AB_OTA_UPDATER := false
 PRODUCT_SOONG_NAMESPACES += bootable/deprecated-ota
@@ -421,7 +413,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal \
     libwifi-hal-qcom \
-    libwpa_client \
     WifiOverlay \
     TetheringConfigOverlay \
     wpa_cli \
