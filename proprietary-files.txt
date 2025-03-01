@@ -912,5 +912,3 @@ vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 vendor/firmware/wlan/qca_cld/bdwlan.bin
 vendor/firmware/wlan/qca_cld/regdb.bin
 vendor/firmware/wlanmdsp.mbn
-vendor/lib/libqsap_sdk.so
-vendor/lib64/libqsap_sdk.so
