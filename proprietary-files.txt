@@ -440,7 +440,6 @@ vendor/lib/liblocation_api.so
 vendor/lib/liblocationservice.so
 vendor/lib/liblocationservice_glue.so
 vendor/lib/liblowi_client.so
-vendor/lib/libmmosal.so
 vendor/lib/libqcc_file_agent.so
 vendor/lib/libqdma_file_agent.so
 vendor/lib/libsynergy_loc_api.so
@@ -477,7 +476,6 @@ vendor/lib64/liblocation_api.so
 vendor/lib64/liblocationservice.so
 vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblowi_client.so
-vendor/lib64/libmmosal.so
 vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libqdma_file_agent.so
 vendor/lib64/libsynergy_loc_api.so

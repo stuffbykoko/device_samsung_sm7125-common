@@ -19,6 +19,9 @@ AB_OTA_UPDATER := false
 MSMSTEPPE := atoll
 TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
 
+TARGET_COMMON_QTI_COMPONENTS += \
+    av
+
 # Init files and fstab
 PRODUCT_PACKAGES += \
     fstab.default \
@@ -227,7 +230,6 @@ PRODUCT_COPY_FILES += \
 
 # Minijail
 PRODUCT_PACKAGES += \
-    libavservices_minijail \
     libavservices_minijail.vendor
 
 # Neural networks

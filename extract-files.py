@@ -26,6 +26,7 @@ namespace_imports = [
     'hardware/samsung',
     'vendor/qcom/opensource/dataservices',
     'vendor/qcom/common/vendor/display',
+    'vendor/qcom/common/system/av',
 ]
 
 
