@@ -20,11 +20,12 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/samsung/sm7125-common',
-    'hardware/qcom-caf/sm8150',
-    'hardware/qcom-caf/wlan',
+    'hardware/qcom/display',
+    'hardware/qcom/gps',
+    'hardware/qcom/wlan',
     'hardware/samsung',
     'vendor/qcom/opensource/dataservices',
-    'vendor/qcom/opensource/display',
+    'vendor/qcom/common/vendor/display',
 ]
 
 
