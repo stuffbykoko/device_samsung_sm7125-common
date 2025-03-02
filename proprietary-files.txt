@@ -493,8 +493,8 @@ vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
 # Adreno
 # Graphics
 # Vulkan
-vendor/bin/hw/vendor.display.color@1.0-service
-vendor/bin/ppd
+vendor/bin/hw/vendor.display.color@1.0-service;DISABLE_DEPS
+vendor/bin/ppd;DISABLE_DEPS
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
