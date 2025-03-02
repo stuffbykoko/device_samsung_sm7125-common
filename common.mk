@@ -22,24 +22,21 @@ TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
 TARGET_COMMON_QTI_COMPONENTS += \
     av \
     display \
-    adreno
+    adreno \
+    init
 
 # Init files and fstab
 PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.ramdisk \
     fstab.ramplus \
-    init.qcom.rc \
-    init.recovery.qcom.rc \
     init.samsung.bsp.rc \
     init.samsung.display.rc \
     init.samsung.rc \
     init.samsung.power.rc \
-    init.qcom.power.rc \
     init.fingerprint.rc \
     init.ramplus.rc \
     init.target.rc \
-    ueventd.qcom.rc \
     wifi_qcom.rc \
     wifi_sec.rc \
     init.audio.samsung.rc \
@@ -48,11 +45,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.rilchip.qcom.rc \
     init.vendor.rilcommon.rc \
     init.vendor.sensors.rc
-
-# Vendor scripts
-PRODUCT_PACKAGES += \
-    init.class_main.sh \
-    init.qcom.sh
 
 # Audio
 PRODUCT_PACKAGES += \

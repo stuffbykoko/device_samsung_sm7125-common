@@ -17,20 +17,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.qcom.rc",
-    src: "etc/init.qcom.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.recovery.qcom.rc",
-    src: "etc/init.recovery.qcom.rc",
-    sub_dir: "init",
-    recovery: true,
-}
-
-prebuilt_etc {
     name: "init.samsung.bsp.rc",
     src: "etc/init.samsung.bsp.rc",
     sub_dir: "init/hw",
@@ -54,13 +40,6 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.samsung.power.rc",
     src: "etc/init.samsung.power.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.qcom.power.rc",
-    src: "etc/init.qcom.power.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
@@ -139,24 +118,5 @@ prebuilt_etc {
     name: "wifi_qcom.rc",
     src: "etc/wifi_qcom.rc",
     sub_dir: "init",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "ueventd.qcom.rc",
-    filename: "ueventd.rc",
-    src: "etc/ueventd.qcom.rc",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.class_main.sh",
-    src: "bin/init.class_main.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qcom.sh",
-    src: "bin/init.qcom.sh",
     vendor: true,
 }
