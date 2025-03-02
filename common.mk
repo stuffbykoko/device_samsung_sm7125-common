@@ -23,7 +23,8 @@ TARGET_COMMON_QTI_COMPONENTS += \
     av \
     display \
     adreno \
-    init
+    init \
+    perf
 
 # Init files and fstab
 PRODUCT_PACKAGES += \
@@ -100,11 +101,6 @@ PRODUCT_PACKAGES += \
 # CAS
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service
-
-# Control groups and task profiles
-PRODUCT_COPY_FILES += \
-    system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
-    system/core/libprocessgroup/profiles/task_profiles_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -269,12 +265,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.pixel-libperfmgr \
-    android.hardware.power@1.2.vendor \
-    libqti-perfd-client
-
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    android.hardware.power@1.2.vendor
 
 # IRQ balance
 PRODUCT_COPY_FILES += \
