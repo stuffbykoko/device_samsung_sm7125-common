@@ -20,7 +20,8 @@ MSMSTEPPE := atoll
 TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
 
 TARGET_COMMON_QTI_COMPONENTS += \
-    av
+    av \
+    display
 
 # Init files and fstab
 PRODUCT_PACKAGES += \
@@ -133,21 +134,7 @@ PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # Display
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-service \
-    android.hardware.graphics.mapper@3.0-impl-qti-display \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
-    vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.memtrack-service \
-    libtinyxml2 \
-    hwcomposer.sm7125 \
-    libqdMetaData \
-    libdisplayconfig.qti \
-    vendor.qti.hardware.display.mapper@1.1.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor \
-    vendor.qti.hardware.display.mapper@3.0.vendor \
-    vendor.qti.hardware.display.mapper@4.0.vendor \
-    vendor.display.config@2.0.vendor
+PRODUCT_PACKAGES += hwcomposer.sm7125
 
 # Include
 $(call soong_config_set,samsungVars,target_specific_header_path,$(COMMON_PATH)/include)
@@ -274,7 +261,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
-    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
     frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
     frameworks/native/data/etc/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute-0.xml \
@@ -344,6 +330,8 @@ PRODUCT_COPY_FILES += \
 
 # FOD
 $(call soong_config_set,samsung_udfps,udfps_zorder,0x20000000u)
+
+TARGET_USES_FOD_ZPOS := true
 
 # Thermal
 PRODUCT_PACKAGES += \
