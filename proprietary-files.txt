@@ -719,7 +719,7 @@ vendor/lib64/libqsocket.so
 vendor/etc/init/init.qti.qcv.rc
 
 # RIL
-vendor/bin/adpl
+vendor/bin/adpl;DISABLE_DEPS
 vendor/bin/hw/rild
 vendor/bin/ipacm-diag
 vendor/bin/rmt_storage
