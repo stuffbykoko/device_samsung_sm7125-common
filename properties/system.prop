@@ -15,6 +15,7 @@ pm.dexopt.bg-dexopt=everything
 persist.sys.fuse.passthrough.enable=true
 
 # display
+persist.sys.brightness.low.gamma=true
 debug.graphics.game_default_frame_rate.disabled=1
 
 # Disable Skia tracing by default
