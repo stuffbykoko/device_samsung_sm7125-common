@@ -19,6 +19,8 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 # No A/B
 AB_OTA_UPDATER := false
 
+TARGET_BOARD_PLATFORM := atoll
+
 # ART
 ART_BUILD_TARGET_NDEBUG := true
 ART_BUILD_TARGET_DEBUG := false
@@ -180,10 +182,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
-# FastCharge
-PRODUCT_PACKAGES += \
-    vendor.lineage.fastcharge@1.0-service.samsung
-
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore \
@@ -236,10 +234,6 @@ PRODUCT_PACKAGES += \
     libkeymaster4_1support.vendor
 
 $(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/sm7125-common:libskeymaster4device)
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-qcom.sm7125
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -378,10 +372,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti \
     android.frameworks.cameraservice.service@2.1.vendor \
     libcamera_metadata.vendor
-
-# Touch features
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.sm7125
 
 # Vendor service manager
 PRODUCT_PACKAGES += \

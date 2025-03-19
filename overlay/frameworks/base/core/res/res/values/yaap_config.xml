@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2020-2025 PixelOS
+     Copyright (C) 2020-2021 YAAP
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -11,16 +11,10 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
 <resources>
+    <!-- Display color inversion availability -->
+    <bool name="config_displayInversionAvailable">false</bool>
 
-     <!-- Color of the UDFPS pressed view -->
-     <color name="config_udfpsColor">#ffffff</color>
-
-    <!-- Whether usage of the proximity sensor during doze is supported -->
-    <bool name="doze_proximity_sensor_supported">false</bool>
-
-    <!-- Whether to play turbulence noise after clicking the play button -->
-    <bool name="config_turbulenceNoise">false</bool>
-
+    <!-- media controls -->
+    <bool name="config_mediaControlsTurbulenceByDefault">false</bool>
 </resources>
