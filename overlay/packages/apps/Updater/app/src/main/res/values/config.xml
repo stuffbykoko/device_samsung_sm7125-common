@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Whether to hide recovery update option -->
+    <bool name="config_hideRecoveryUpdate">true</bool>
+</resources>

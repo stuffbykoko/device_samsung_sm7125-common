@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/koko-07870/ota_stuff/refs/heads/pos-15/{device}.json</string>
+    <string name="changelog_url" translatable="false">https://raw.githubusercontent.com/koko-07870/ota_stuff/refs/heads/pos-15/a572q.md</string>
+    <string name="certified_prop_url" translatable="false">https://raw.githubusercontent.com/koko-07870/ota_stuff/refs/heads/pos-15/cert/cert.apk</string>
+</resources>
