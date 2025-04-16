@@ -150,3 +150,9 @@ on property:vendor.post_boot.parsed=1
     # Setup dex2oat thread count and cpuset
     setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,7
     setprop dalvik.vm.dex2oat-threads 6
+
+    # IRQ Tuning
+    # IRQ 300: msm_drm0
+    # IRQ 222: kgsl_3d0_irq
+    write /proc/irq/300/smp_affinity_list 2
+    write /proc/irq/222/smp_affinity_list 1
